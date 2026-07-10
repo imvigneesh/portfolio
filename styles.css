@@ -373,3 +373,9 @@ hr{
     margin: 12px 0;
 }
 
+#welcomeMessage{
+    color: orange;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px;
+}
