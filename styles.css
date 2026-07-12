@@ -35,6 +35,7 @@ nav{
     margin-bottom: 30px;
     align-items: center;
     background: rgba(26,26,26,0.8);
+    z-index: 1000;
 }
 
 nav a{
@@ -52,10 +53,14 @@ nav a:hover{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 52px;
     font-weight: 800;
-    margin-bottom: 10px;
-    line-height: 1.1;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #ffffff, #ff9800);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2{
@@ -94,13 +99,16 @@ button{
     align-items: center;
     justify-content: center;
     gap: 8px;
+    position: relative;
+    overflow: hidden;
 }
 
 button:hover{
     background: #ff9800;
     box-shadow: 0 12px 28px rgba(255, 140, 0, 0.5) ;
     letter-spacing: 1px;
-    transform: translateY(-3px);
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 button:active{
@@ -164,7 +172,7 @@ footer{
 }
 
 .profile-pic:hover{
-    transform: scale(1.06);
+    transform: scale(1.05);
     box-shadow: 0 0 40px rgba(255, 140, 0, 0.7);
 }
 
@@ -321,11 +329,10 @@ nav a:hover::after{
 }
 
 .tagline{
-    font-size: 18px;
-    font-weight: 600;
-    color: #ffffff;
-    opacity: 0.85;
-    margin-bottom: 15px;
+    font-size: 20px;
+    color: #cfcfcf;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
 }
 
 hr{

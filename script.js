@@ -54,3 +54,19 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 hiddenElements.forEach((el) => observer.observe(el));
+
+// text effact
+const text = "Aspiring Frontend Developer | Learning Every Day 🚀";
+const typing = document.getElementById("typing");
+
+let i = 0;
+
+function typeEffect() {
+    if (i < text.length) {
+        typing.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 70);
+    }
+}
+
+typeEffect();
